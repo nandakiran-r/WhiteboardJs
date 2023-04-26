@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteboardJs | Nandakiran R</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="tools">
+        <button onclick="pick_color()" class="color-picker"><i class="fa-solid fa-ellipsis"></i></button>
+        <input type="range" min="1" max="100" class="pen-range" onInput="draw_width = this.value" value="2">
+        <button onclick="clear_canvas()" type="button" class="clear_all"><i class="fa-solid fa-brush"></i></button>
+        <button onclick="eraser()" type="button" class="erase"><i class="fa-solid fa-eraser"></i></button>
+        <button onclick="change_color(this.id)" type="button" id="red"></button>
+        <button onclick="change_color(this.id)" type="button" id="green"></button>
+        <button onclick="change_color(this.id)" type="button" id="blue"></button>
+        <button onclick="change_color(this.id)" type="button" id="black"></button>
+        <button onclick="save_img()" type="button" id="save"><i class="fas fa-save"></i></button>
+        <div id="palette">
+            <button onclick="change_color(this.id)" type="button" id="yellow"></button>
+            <button onclick="change_color(this.id)" type="button" id="orange"></button>
+            <button onclick="change_color(this.id)" type="button" id="pink"></button>
+            <button onclick="change_color(this.id)" type="button" id="cyan"></button>
+            <button onclick="change_color(this.id)" type="button" id="purple"></button>
+            <button onclick="change_color(this.id)" type="button" id="fuchsia"></button>
+            <button onclick="change_color(this.id)" type="button" id="gold"></button>
+            <button onclick="change_color(this.id)" type="button" id="lavender"></button>
+        </div>
+        <div id="palette2">
+            <button onclick="change_color(this.id)" type="button" id="violet"></button>
+            <button onclick="change_color(this.id)" type="button" id="darkblue"></button>
+            <button onclick="change_color(this.id)" type="button" id="lime"></button>
+            <button onclick="change_color(this.id)" type="button" id="magenta"></button>
+            <button onclick="change_color(this.id)" type="button" id="olive"></button>
+            <button onclick="change_color(this.id)" type="button" id="lightblue"></button>
+            <button onclick="change_color(this.id)" type="button" id="silver"></button>
+            <button onclick="change_color(this.id)" type="button" id="teal"></button>
+        </div>
+        <div id="palette3">
+            <button onclick="change_color(this.id)" type="button" id="grey"></button>
+            <button onclick="change_color(this.id)" type="button" id="indigo"></button>
+            <button onclick="change_color(this.id)" type="button" id="wheat"></button>
+            <button onclick="change_color(this.id)" type="button" id="brown"></button>
+            <button onclick="change_color(this.id)" type="button" id="crimson"></button>
+            <button onclick="change_color(this.id)" type="button" id="dodgerblue"></button>
+            <button onclick="change_color(this.id)" type="button" id="tomato"></button>
+            <button onclick="change_color(this.id)" type="button" id="springgreen"></button>
+        </div>
+    </div>
+    <canvas id="canvas">Your browser does not support HTML5 canvas</canvas>
+    <script src="./script.js"></script>
+</body>
+
+</html>
